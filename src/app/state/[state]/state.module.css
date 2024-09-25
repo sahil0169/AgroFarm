@@ -1,0 +1,101 @@
+/* styles.module.css */
+
+/* Styling the table container */
+.tableContainer {
+  width: 100%;
+  margin: 20px auto;
+  overflow-x: auto; /* Add horizontal scroll on small screens */
+}
+
+/* Styling the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+
+/* Styling for the table header */
+.table th {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styling for the table rows */
+.table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add alternating background colors for table rows */
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Highlight row on hover */
+.table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer; /* Optional: Show pointer cursor on hover */
+}
+
+/* Responsive table: make the table scrollable on small screens */
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* styles.module.css */
+
+/* Container for each dropdown */
+.dropdownContainer {
+  margin-bottom: 20px; /* Space between dropdowns */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+   /* Optional: Set a maximum width */
+}
+
+/* Styling for the label */
+.label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for the select dropdown */
+.select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+/* Styling for the select dropdown on focus */
+.select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+/* Styling the dropdown options */
+.select option {
+  padding: 10px;
+}
+
+/* Styling the select when hovered */
+.select:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+
